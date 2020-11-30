@@ -1,0 +1,11 @@
+syntax = "proto2";
+package protobufBenchmarks;
+
+option java_package = "data";
+option java_outer_classname = "LabStateDTO";
+
+message LabState {
+    required string code = 1;
+    required string results = 2;
+    required string funnyJokes = 3;
+}

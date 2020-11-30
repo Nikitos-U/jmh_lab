@@ -1,0 +1,152 @@
+PROTOBUF DESERIALIZATION:
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/a18535673/.m2/repository/org/openjdk/jmh/jmh-core/1.12/jmh-core-1.12.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH 1.12 (released 1704 days ago, please consider updating!)
+# VM version: JDK 14.0.1, VM 14.0.1+7
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57635:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 7 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: protobufBenchmarks.ProtobufSerialization.protobufSerializationThroughput
+
+# Run progress: 0,00% complete, ETA 00:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 4364472,597 ops/s
+# Warmup Iteration   2: 6289162,245 ops/s
+# Warmup Iteration   3: 6647499,840 ops/s
+# Warmup Iteration   4: 6638885,956 ops/s
+# Warmup Iteration   5: 6651058,421 ops/s
+Iteration   1: 6618939,913 ops/s
+Iteration   2: 6625343,253 ops/s
+Iteration   3: 6639487,112 ops/s
+Iteration   4: 6645365,946 ops/s
+Iteration   5: 6650331,451 ops/s
+Iteration   6: 6585716,854 ops/s
+Iteration   7: 6586537,567 ops/s
+
+
+Result "protobufSerializationThroughput":
+  6621674,585 ±(99.9%) 59929,734 ops/s [Average]
+  (min, avg, max) = (6585716,854, 6621674,585, 6650331,451), stdev = 26609,173
+  CI (99.9%): [6561744,851, 6681604,320] (assumes normal distribution)
+
+
+# JMH 1.12 (released 1704 days ago, please consider updating!)
+# VM version: JDK 14.0.1, VM 14.0.1+7
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57635:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 7 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: protobufBenchmarks.ProtobufSerialization.protobufSerializationAvgTime
+
+# Run progress: 50,00% complete, ETA 00:00:12
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+
+
+Result "protobufSerializationAvgTime":
+  ≈ 10⁻⁶ s/op
+
+
+# Run complete. Total time: 00:00:25
+
+Benchmark                                                                  Mode  Cnt        Score       Error  Units
+protobufBenchmarks.ProtobufSerialization.protobufSerializationThroughput  thrpt    7  6621674,585 ± 59929,734  ops/s
+protobufBenchmarks.ProtobufSerialization.protobufSerializationAvgTime      avgt    7       ≈ 10⁻⁶               s/op
+
+JSON DESERIALIZATION:
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/a18535673/.m2/repository/org/openjdk/jmh/jmh-core/1.12/jmh-core-1.12.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH 1.12 (released 1704 days ago, please consider updating!)
+# VM version: JDK 14.0.1, VM 14.0.1+7
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57750:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 7 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jsonBenchmarks.JsonDeserialization.deserializationThroughput
+
+# Run progress: 0,00% complete, ETA 00:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 8133079,362 ops/s
+# Warmup Iteration   2: 12289472,774 ops/s
+# Warmup Iteration   3: 10957970,217 ops/s
+# Warmup Iteration   4: 12917539,119 ops/s
+# Warmup Iteration   5: 13852858,139 ops/s
+Iteration   1: 13832418,388 ops/s
+Iteration   2: 13857184,008 ops/s
+Iteration   3: 13907554,916 ops/s
+Iteration   4: 13267497,182 ops/s
+Iteration   5: 13406897,292 ops/s
+Iteration   6: 13383863,578 ops/s
+Iteration   7: 12705388,544 ops/s
+
+
+Result "deserializationThroughput":
+  13480114,844 ±(99.9%) 968296,140 ops/s [Average]
+  (min, avg, max) = (12705388,544, 13480114,844, 13907554,916), stdev = 429929,487
+  CI (99.9%): [12511818,704, 14448410,984] (assumes normal distribution)
+
+
+# JMH 1.12 (released 1704 days ago, please consider updating!)
+# VM version: JDK 14.0.1, VM 14.0.1+7
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57750:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 7 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jsonBenchmarks.JsonDeserialization.deserializationAvgTime
+
+# Run progress: 50,00% complete, ETA 00:00:12
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+# Warmup Iteration   4: ≈ 10⁻⁷ s/op
+# Warmup Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁷ s/op
+Iteration   2: ≈ 10⁻⁷ s/op
+Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   4: ≈ 10⁻⁷ s/op
+Iteration   5: ≈ 10⁻⁷ s/op
+Iteration   6: ≈ 10⁻⁷ s/op
+Iteration   7: ≈ 10⁻⁷ s/op
+
+
+Result "deserializationAvgTime":
+  ≈ 10⁻⁷ s/op
+
+
+# Run complete. Total time: 00:00:25
+
+Benchmark                                                      Mode  Cnt         Score        Error  Units
+jsonBenchmarks.JsonDeserialization.deserializationThroughput  thrpt    7  13480114,844 ± 968296,140  ops/s
+jsonBenchmarks.JsonDeserialization.deserializationAvgTime      avgt    7        ≈ 10⁻⁷                s/op
